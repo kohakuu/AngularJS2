@@ -11,4 +11,16 @@ app.controller('bootstrapController', function($scope) {
 	$scope.ContentC = function() {
 		$scope.content = "ayyy lmao";
 	}
+	$scope.section = [
+		{
+			id: 1,
+			name: "A",
+			url: "#",
+		},
+		{
+			id: 2,
+			name: "B",
+			url: "#",
+		}
+	];
 });

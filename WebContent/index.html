@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Blabla</title>
+
+<link rel='stylesheet' href="css/bootstrap.min.css">
+<link rel='stylesheet' href="css/main.css">
+<script src="lib/angular.min.js"></script>
+<script src="js/scripts.js"></script>
+</head>
+<body data-ng-app="myApp" data-ng-controller="indexController">
+	<div id="head">
+		<ul>
+			<li ng-repeat="menu in menuNav">{{menu}}</li>
+		</ul>
+	</div>
+	<div id="wrap">
+		<div id="left">
+			<div id="bo">Menu</div>
+			<div id="menu">
+				<ul>
+					<li ng-repeat="sideNava in sideMenu.name">{{sideNav}}
+						<ul>
+							<li ng-repeat="sideNav in sideMenu.children">{{sideNav}}</li>
+						</ul>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+		<div id="col">
+		<a href="./bootstrap.html">Bootstrap</a>
+		</div>
+		<div id="right">
+		hiiiiiiiiiiiiiiiiiiiii
+		</div>
+	</div>
+	<div id="footer">
+	hiiiiiiiiiiiiiiiiiiiii
+	</div>
+</body>
+</html>
